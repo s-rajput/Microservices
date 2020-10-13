@@ -1,0 +1,83 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "ServiceName": "webaggregator",
+      "UpstreamPathTemplate": "/gateway/web/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "webaggregator",
+      "FileCacheOptions": {
+        "TtlSeconds": 1,
+        "Region": "somename"
+      },
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection"
+      },
+      "HttpHandlerOptions": {
+        "UseTracing": true
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "ServiceName": "identity",
+      "UpstreamPathTemplate": "/gateway/identity/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "identity",
+      "FileCacheOptions": {
+        "TtlSeconds": 1,
+        "Region": "somename"
+      },
+      "LoadBalancerOptions": {
+        "Type": "LeastConnection"
+      },
+      "HttpHandlerOptions": {
+        "UseTracing": true
+      }
+    }
+
+  ],
+  "SwaggerEndPoints": [
+    {
+
+      "Key": "webaggregator",
+      "Config": [
+        {
+          "Name": "AGL Cats API assessment",
+          "Version": "v1",
+          "Service": {
+            "Name": "webaggregator",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    },
+    {
+
+      "Key": "identity",
+      "Config": [
+        {
+          "Name": "AGL Identity server",
+          "Version": "v1",
+          "Service": {
+            "Name": "identity",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost",
+    "RateLimitOptions": {
+      "DisableRateLimitHeaders": false,
+      "QuotaExceededMessage": "Your quota exceeded!",
+      "HttpStatusCode": 999,
+      "ClientIdHeader": "Test"
+    },
+    "ServiceDiscoveryProvider": {
+      "Type": "AppConfiguration",
+      "PollingIntervalSeconds": 10000
+    }
+  }
+}
+  

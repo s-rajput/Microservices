@@ -1,0 +1,116 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1102013E-7CD2-4802-8534-9BEA3EB45041}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiManagement", "ApiManagement", "{84645EA4-5CCA-4242-AF80-9A4014776EC3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiServices", "ApiServices", "{1236A076-C674-4C9F-9027-9D28BF4DBB5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{F57D8BC6-20CC-4701-900C-E2D4D23F04D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGatewayOcelot", "src\ApiGateways\OcelotAPIGateway\APIGatewayOcelot.csproj", "{D63A0C03-75A3-419F-BA47-3EB3B6EFA146}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pets", "Pets", "{19378B1A-F59B-45FC-9AB5-DF5EA13EF9DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetsApi", "src\Services\Pets\PetsApi\PetsApi.csproj", "{B6EBB535-4AA0-4EEB-AD7B-CD00703F0422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{D5C95A32-8A16-4B26-8389-B632B386EA34}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SPA_Client", "src\WebApp\SPA_Client\", "{D803CD8A-519C-4528-9F28-2DFEAB9AABF7}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53987"
+		Debug.AspNetCompiler.PhysicalPath = "src\WebApp\SPA_Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53987\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53987"
+		Release.AspNetCompiler.PhysicalPath = "src\WebApp\SPA_Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53987\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53987"
+		SlnRelativePath = "src\WebApp\SPA_Client\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetsApi.Tests", "src\Services\Pets\PetsApi.Tests\PetsApi.Tests.csproj", "{97A5EB70-829A-45C3-99CA-3A44D42B811B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAggregate", "WebAggregate", "{7253913D-050C-4329-A202-532ABC623D93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{3F23AA4E-4234-45A7-AE40-30BB10D4C40E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAggregator", "src\ApiGateways\Aggregator\WebAggregator\WebAggregator.csproj", "{F5DA03E9-54CB-41B3-8173-9016E4D1F48A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\Services\Identity\IdentityServer\IdentityServer.csproj", "{080F89A3-E8D2-4762-8A04-68BB2085FCD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{1A42971E-93D6-43D9-91A1-31294CCF531F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\sande\OneDrive\Desktop\AggregatorApis.jpg = ..\..\Users\sande\OneDrive\Desktop\AggregatorApis.jpg
+		..\..\Users\sande\OneDrive\Desktop\architecture.jpg = ..\..\Users\sande\OneDrive\Desktop\architecture.jpg
+		..\..\Users\sande\OneDrive\Desktop\gatewayApis.jpg = ..\..\Users\sande\OneDrive\Desktop\gatewayApis.jpg
+		..\..\Users\sande\OneDrive\Desktop\IdentityServer.jpg = ..\..\Users\sande\OneDrive\Desktop\IdentityServer.jpg
+		..\..\Users\sande\OneDrive\Desktop\petsapi.jpg = ..\..\Users\sande\OneDrive\Desktop\petsapi.jpg
+		..\..\Users\sande\OneDrive\Desktop\WebsiteLandingPage.jpg = ..\..\Users\sande\OneDrive\Desktop\WebsiteLandingPage.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D63A0C03-75A3-419F-BA47-3EB3B6EFA146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D63A0C03-75A3-419F-BA47-3EB3B6EFA146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D63A0C03-75A3-419F-BA47-3EB3B6EFA146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D63A0C03-75A3-419F-BA47-3EB3B6EFA146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6EBB535-4AA0-4EEB-AD7B-CD00703F0422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6EBB535-4AA0-4EEB-AD7B-CD00703F0422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6EBB535-4AA0-4EEB-AD7B-CD00703F0422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6EBB535-4AA0-4EEB-AD7B-CD00703F0422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D803CD8A-519C-4528-9F28-2DFEAB9AABF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D803CD8A-519C-4528-9F28-2DFEAB9AABF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D803CD8A-519C-4528-9F28-2DFEAB9AABF7}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D803CD8A-519C-4528-9F28-2DFEAB9AABF7}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{97A5EB70-829A-45C3-99CA-3A44D42B811B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A5EB70-829A-45C3-99CA-3A44D42B811B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A5EB70-829A-45C3-99CA-3A44D42B811B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A5EB70-829A-45C3-99CA-3A44D42B811B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5DA03E9-54CB-41B3-8173-9016E4D1F48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5DA03E9-54CB-41B3-8173-9016E4D1F48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5DA03E9-54CB-41B3-8173-9016E4D1F48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5DA03E9-54CB-41B3-8173-9016E4D1F48A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080F89A3-E8D2-4762-8A04-68BB2085FCD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080F89A3-E8D2-4762-8A04-68BB2085FCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080F89A3-E8D2-4762-8A04-68BB2085FCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080F89A3-E8D2-4762-8A04-68BB2085FCD0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84645EA4-5CCA-4242-AF80-9A4014776EC3} = {1102013E-7CD2-4802-8534-9BEA3EB45041}
+		{1236A076-C674-4C9F-9027-9D28BF4DBB5A} = {1102013E-7CD2-4802-8534-9BEA3EB45041}
+		{F57D8BC6-20CC-4701-900C-E2D4D23F04D6} = {1236A076-C674-4C9F-9027-9D28BF4DBB5A}
+		{D63A0C03-75A3-419F-BA47-3EB3B6EFA146} = {3F23AA4E-4234-45A7-AE40-30BB10D4C40E}
+		{19378B1A-F59B-45FC-9AB5-DF5EA13EF9DF} = {1236A076-C674-4C9F-9027-9D28BF4DBB5A}
+		{B6EBB535-4AA0-4EEB-AD7B-CD00703F0422} = {19378B1A-F59B-45FC-9AB5-DF5EA13EF9DF}
+		{D5C95A32-8A16-4B26-8389-B632B386EA34} = {1102013E-7CD2-4802-8534-9BEA3EB45041}
+		{D803CD8A-519C-4528-9F28-2DFEAB9AABF7} = {D5C95A32-8A16-4B26-8389-B632B386EA34}
+		{97A5EB70-829A-45C3-99CA-3A44D42B811B} = {19378B1A-F59B-45FC-9AB5-DF5EA13EF9DF}
+		{7253913D-050C-4329-A202-532ABC623D93} = {84645EA4-5CCA-4242-AF80-9A4014776EC3}
+		{3F23AA4E-4234-45A7-AE40-30BB10D4C40E} = {84645EA4-5CCA-4242-AF80-9A4014776EC3}
+		{F5DA03E9-54CB-41B3-8173-9016E4D1F48A} = {7253913D-050C-4329-A202-532ABC623D93}
+		{080F89A3-E8D2-4762-8A04-68BB2085FCD0} = {F57D8BC6-20CC-4701-900C-E2D4D23F04D6}
+		{1A42971E-93D6-43D9-91A1-31294CCF531F} = {1102013E-7CD2-4802-8534-9BEA3EB45041}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2373204F-82CC-4318-8022-29C337B213E7}
+	EndGlobalSection
+EndGlobal
