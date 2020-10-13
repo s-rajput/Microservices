@@ -48,23 +48,26 @@ namespace PetsApi.Tests
         }
 
         [TestMethod]
-        public async Task Test_LiveHttpClient_InvalidURL_fail()
+        [ExpectedException(typeof(Exceptions.PetsCustomException),
+             "Invalid operation occured inside pet service.")]
+        public async Task Test_Exeception()
         {
 
             //assemble 
-            //mock configuration
+
             var configMock = Substitute.For<IOptions<ConfigSettings>>();
             configMock.Value.Returns(new ConfigSettings
             {
-                MelbourneRepositoryURL = "WWW.IAMFAKE.COM", SydneyRepositoryURL = "FAKEURL.COM"
+                SydneyRepositoryURL = "https://invalid.azurewebsites.net/Sydney",
+                MelbourneRepositoryURL = "https://invalid.azurewebsites.net/Melbourne"
             });
             //mock service
             var mockService = Substitute.For<Pets>(new HttpClient(), configMock);
+
             //act
             var Result = await mockService.GetPets();
-
             //assert 
-             
+
             Assert.IsNull(Result); 
             Console.WriteLine(Result);
         }

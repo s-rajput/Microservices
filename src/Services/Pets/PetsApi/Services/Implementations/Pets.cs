@@ -11,6 +11,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
+using PetsApi.Exceptions;
 //for unit testing
 [assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 namespace PetsApi.Services.Implementations
@@ -42,11 +43,13 @@ namespace PetsApi.Services.Implementations
 
         public async Task<List<PetData>> GetPets()
         {
-            var Pets = await GetCityPets(Cities.Melbourne);
+            try
+            {
+                var Pets = await GetCityPets(Cities.Melbourne);
 
-            Pets.AddRange(await GetCityPets(Cities.Sydney));
+                Pets.AddRange(await GetCityPets(Cities.Sydney));
 
-            return (from o in Pets.GroupBy(g => g.Gender)
+                return (from o in Pets.GroupBy(g => g.Gender)
                         select new PetData
                         {
                             Gender = o.First().Gender,
@@ -55,9 +58,14 @@ namespace PetsApi.Services.Implementations
                                     select new CityPets
                                     {
                                         Name = p.Name,
-                                        City =p.City
+                                        City = p.City
                                     }).ToArray()
                         }).ToList();
+            }
+            catch (Exception)
+            {
+                throw new PetsCustomException("Invalid operation occured inside pet service.");
+            }
         }
 
         private async Task<List<PetData>> GetCityPets(Cities city)
