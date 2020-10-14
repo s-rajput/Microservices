@@ -24,7 +24,7 @@
  > 2. Run **dotnet run**
  > 3. Identity server issues token to be able to access the secure microservice - PetApi
  > 
-![identityserver](https://github.com/s-rajput/Microservices/blob/master/IdentityServer.jpg)
+![](https://github.com/s-rajput/Microservices/blob/master/idp.jpg)
 
  #### B. Start the Microservices - PetsApi
  > 1. Open CMD and CD to path: **src\Services\Pets\PetsApi** 
