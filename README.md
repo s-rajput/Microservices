@@ -10,7 +10,7 @@
 > Identity server4 in-memory client credentials is implemented for securing the microservices.
 
  ### Architecture
- 
+ ![Arhiecture](https://github.com/s-rajput/Microservices/blob/master/architecture2.jpg)
  ![Arhiecture](https://github.com/s-rajput/Microservices/blob/master/architecture1.jpg)
  
  ### Setup
