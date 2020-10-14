@@ -1,15 +1,12 @@
 # Demo
 ![](https://github.com/s-rajput/Microservices/blob/master/demo1.gif?raw=true)
 # Microservices
-![GitHub release](https://img.shields.io/github/v/release/s-rajput/Microservices.svg?style=for-the-badge) 
-> This repository involves a quick demonstration of API Management using Ocelot API Gateway for accessing secure micro-services built using Service-oriented Arhiecture.
-> Identity server4 in-memory client credentials is implemented for securing the microservices.
-# APIGateway with Identityserver and SPA Client
- ![GitHub Release Date](https://img.shields.io/github/release-date/s-rajput/Microservices.svg?style=plastic) 
  [![.Net Framework](https://img.shields.io/badge/DotNet-3.1_Framework-blue.svg?style=plastic)](https://www.microsoft.com/net/download/dotnet-core/3.1) |[![Node](https://img.shields.io/badge/Node-Js-blue.svg?style=plastic)](https://nodejs.org/en/download/)
  ![GitHub language count](https://img.shields.io/github/languages/count/s-rajput/Microservices.svg) 
  ![GitHub top language](https://img.shields.io/github/languages/top/s-rajput/Microservices.svg) 
- 
+> This repository involves a quick demonstration of API Management using Ocelot API Gateway for accessing secure micro-services built using Service-oriented Arhiecture.
+> Identity server4 in-memory client credentials is implemented for securing the microservices.
+> Tools : Front end: Vue JS using TypeScript, Back-end: .Net Core
  ### Architecture
  
  ![Arhiecture](https://github.com/s-rajput/Microservices/blob/master/architecture1.jpg)
