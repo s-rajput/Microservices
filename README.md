@@ -5,7 +5,7 @@
  ![GitHub language count](https://img.shields.io/github/languages/count/s-rajput/Microservices.svg) 
  ![GitHub top language](https://img.shields.io/github/languages/top/s-rajput/Microservices.svg) 
  
- #### Front end: Vue JS using TypeScript, Back-end: .Net Core
+ #### Front end: Vue JS using TypeScript, Back-end: .Net Core, API Gateway: Ocelot, Identity server: IdentityServer4
 > This repository involves a quick demonstration of API Management using Ocelot API Gateway for accessing secure micro-services built using Service-oriented Arhiecture.
 > Identity server4 in-memory client credentials is implemented for securing the microservices.
 
